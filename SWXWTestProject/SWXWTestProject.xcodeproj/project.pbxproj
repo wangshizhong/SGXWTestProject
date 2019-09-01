@@ -33,6 +33,7 @@
 		58E846B9231BCADB002EB680 /* WSZBaseCommonInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E846B8231BCADB002EB680 /* WSZBaseCommonInfo.m */; };
 		58E846BC231BCD36002EB680 /* WSZNetBaseRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E846BB231BCD36002EB680 /* WSZNetBaseRequestManager.m */; };
 		B2924F7335AE6C3826B289B6 /* Pods_SWXWTestProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A3E5A7BA637A3FBB45A6AB /* Pods_SWXWTestProjectTests.framework */; };
+		B5432CDC231BDBB300391C75 /* Readme in Resources */ = {isa = PBXBuildFile; fileRef = B5432CDB231BDBB300391C75 /* Readme */; };
 		B9EC928D04C761442DFC06DD /* Pods_SWXWTestProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F777A69378D3300822BA00 /* Pods_SWXWTestProjectUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +114,7 @@
 		8D134765DF90C35E287E5A09 /* Pods-SWXWTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWXWTestProject.release.xcconfig"; path = "Target Support Files/Pods-SWXWTestProject/Pods-SWXWTestProject.release.xcconfig"; sourceTree = "<group>"; };
 		93AAEB7E94942532CDFDD37E /* Pods_SWXWTestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWXWTestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F777A69378D3300822BA00 /* Pods_SWXWTestProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWXWTestProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5432CDB231BDBB300391C75 /* Readme */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 		D4A3E5A7BA637A3FBB45A6AB /* Pods_SWXWTestProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWXWTestProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -173,27 +175,15 @@
 				58E84688231B710F002EB680 /* Network */,
 				58E84656231B6E99002EB680 /* AppDelegate.h */,
 				58E84657231B6E99002EB680 /* AppDelegate.m */,
+				B5432CD4231BDA8D00391C75 /* Moudle */,
 				58E84659231B6E99002EB680 /* ViewController.h */,
 				58E8465A231B6E99002EB680 /* ViewController.m */,
-				58E8468F231B771E002EB680 /* LNPhotoListViewController.h */,
-				58E84690231B771E002EB680 /* LNPhotoListViewController.m */,
-				58E84695231B7AFF002EB680 /* WSZPhotoCell.h */,
-				58E84696231B7AFF002EB680 /* WSZPhotoCell.m */,
-				58E8469B231B9C9B002EB680 /* WSZProxy.h */,
-				58E8469C231B9C9B002EB680 /* WSZProxy.m */,
-				58E84698231B7DB3002EB680 /* WSZPhotoModel.h */,
-				58E84699231B7DB3002EB680 /* WSZPhotoModel.m */,
-				58E84692231B7781002EB680 /* WSZPhtoListObject.h */,
-				58E84693231B7781002EB680 /* WSZPhtoListObject.m */,
-				587A6884231BD02D00714971 /* WSZPhotolistRequest.h */,
-				587A6885231BD02D00714971 /* WSZPhotolistRequest.m */,
-				587A6887231BD30700714971 /* WSZPhotoListResponse.h */,
-				587A6888231BD30700714971 /* WSZPhotoListResponse.m */,
 				58E8465C231B6E99002EB680 /* Main.storyboard */,
 				58E8465F231B6E9D002EB680 /* Assets.xcassets */,
 				58E84661231B6E9D002EB680 /* LaunchScreen.storyboard */,
 				58E84664231B6E9D002EB680 /* Info.plist */,
 				58E84665231B6E9D002EB680 /* main.m */,
+				B5432CDB231BDBB300391C75 /* Readme */,
 			);
 			path = SWXWTestProject;
 			sourceTree = "<group>";
@@ -272,6 +262,75 @@
 				76094A5F10BA36118DCCAC75 /* Pods-SWXWTestProjectUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B5432CD4231BDA8D00391C75 /* Moudle */ = {
+			isa = PBXGroup;
+			children = (
+				B5432CD5231BDA9E00391C75 /* MVC */,
+			);
+			path = Moudle;
+			sourceTree = "<group>";
+		};
+		B5432CD5231BDA9E00391C75 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				B5432CDA231BDB4800391C75 /* Helper */,
+				B5432CD9231BDB2400391C75 /* Request */,
+				B5432CD8231BDAD400391C75 /* Controller */,
+				B5432CD7231BDABD00391C75 /* View */,
+				B5432CD6231BDAB100391C75 /* Model */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		B5432CD6231BDAB100391C75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				58E84698231B7DB3002EB680 /* WSZPhotoModel.h */,
+				58E84699231B7DB3002EB680 /* WSZPhotoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5432CD7231BDABD00391C75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58E84695231B7AFF002EB680 /* WSZPhotoCell.h */,
+				58E84696231B7AFF002EB680 /* WSZPhotoCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5432CD8231BDAD400391C75 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				58E8468F231B771E002EB680 /* LNPhotoListViewController.h */,
+				58E84690231B771E002EB680 /* LNPhotoListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5432CD9231BDB2400391C75 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				587A6884231BD02D00714971 /* WSZPhotolistRequest.h */,
+				587A6885231BD02D00714971 /* WSZPhotolistRequest.m */,
+				587A6887231BD30700714971 /* WSZPhotoListResponse.h */,
+				587A6888231BD30700714971 /* WSZPhotoListResponse.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		B5432CDA231BDB4800391C75 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				58E8469B231B9C9B002EB680 /* WSZProxy.h */,
+				58E8469C231B9C9B002EB680 /* WSZProxy.m */,
+				58E84692231B7781002EB680 /* WSZPhtoListObject.h */,
+				58E84693231B7781002EB680 /* WSZPhtoListObject.m */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5432CDC231BDBB300391C75 /* Readme in Resources */,
 				58E84663231B6E9D002EB680 /* LaunchScreen.storyboard in Resources */,
 				58E84660231B6E9D002EB680 /* Assets.xcassets in Resources */,
 				58E8465E231B6E99002EB680 /* Main.storyboard in Resources */,

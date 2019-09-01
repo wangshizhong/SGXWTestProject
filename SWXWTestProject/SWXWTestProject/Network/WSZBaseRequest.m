@@ -20,12 +20,10 @@
 - (NSString *)requestHostUrl{
     return @"";
 }
-
 - (NSDictionary *)param
 {
     return @{};
 }
-
 - (id)responseClass
 {
     return [WSZBaseResponse class];
@@ -36,19 +34,6 @@
     return @"application/x-www-form-urlencoded";
 }
 
-- (NSDictionary *)requestParam
-{
-    NSMutableDictionary *param = [self param].mutableCopy;
-    return param;
-}
-
-- (NSMutableURLRequest *)URLRequest
-{
-    NSMutableURLRequest *netRequest = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"POST" URLString:[self requestHostUrl] parameters:[self requestParam] error:nil];
-    netRequest.timeoutInterval = 10.f;
-    [netRequest setValue:[self contentType] forHTTPHeaderField:@"Content-Type"];
-    return netRequest;
-}
 
 - (void)startRequestWithComplete:(void (^)(WSZBaseResponse *response, WSZBaseResponseError *))complete
 {
@@ -59,7 +44,6 @@
             weakSelf.status = status;
             if (status == WSZNetBaseRequestStatusSuccess) {
                 Class responseClass = [self responseClass];
-
                 WSZBaseResponse *responseObject = [[responseClass alloc] init];
                 responseObject.data = responseData;
 

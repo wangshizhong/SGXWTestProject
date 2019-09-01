@@ -41,8 +41,9 @@
     if(!photoCell){
         photoCell = [tableView dequeueReusableCellWithIdentifier:indefir forIndexPath:indexPath];
     }
+    
     WSZPhotoModel *aModel = self.dataSource[indexPath.row];
-
+    
     /*通过消息转发和delegate解耦Model和View */
     WSZProxy *proxy = [WSZProxy alloc];
 
@@ -59,38 +60,17 @@
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.dataSource.count;
 }
-
-
-
 #pragma NetWork
 - (void)loadPhtoto{
 
     WSZPhotolistRequest *request = [[WSZPhotolistRequest alloc] init];
-
     [request startRequestWithComplete:^(WSZBaseResponse * _Nonnull response, WSZBaseResponseError * _Nonnull error) {
-
         NSLog(@"%@",response);
         NSLog(@"%@",error);
         NSArray *photolist = [NSArray yy_modelArrayWithClass:[WSZPhotoModel class] json:response.data];//[WSZPhotoModel yy_:response.data];
         [self.dataSource addObjectsFromArray:photolist];
         [self.tableView reloadData];
-
     }];
-
-
-
-
-//    WSZNetworkManager *manger = [[WSZNetworkManager alloc]init];
-//    [manger get:@"https://api.unsplash.com/photos?client_id=74a51d7b26dc7290ad076272a362d0964345414251b2a2dfc967ac81e5ef5c73&page=1&per_page=20" successBlock:^(WSZNetworkResponseObject * _Nullable object) {
-//
-//        NSMutableArray *photolist = [WSZPhotoModel mj_objectArrayWithKeyValuesArray:object.data];
-//
-//        [self.dataSource addObjectsFromArray:photolist];
-//        [self.tableView reloadData];
-//    } failBlock:^(WSZNetworkResponseObject * _Nullable object) {
-//        NSLog(@"%@",object);
-//
-//    }];
 }
 
 

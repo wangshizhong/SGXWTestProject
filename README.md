@@ -19,5 +19,4 @@ WSZBaseRequestProtocol:startRequestWithComplete 用于发起网络请求，WSZBa
 
   5.5 WSZBaseCommonInfo  对所有共参的配置
 
-
 6. WSZNetworkUtility 可以展示网络的即时状态，待扩展。

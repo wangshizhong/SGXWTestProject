@@ -1,0 +1,6 @@
+framework module Pods_SWXWTestProjectTests {
+  umbrella header "Pods-SWXWTestProjectTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

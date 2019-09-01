@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01E8909FCF06AB63F820A2AF /* Pods_SWXWTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AAEB7E94942532CDFDD37E /* Pods_SWXWTestProject.framework */; };
+		587A6886231BD02D00714971 /* WSZPhotolistRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 587A6885231BD02D00714971 /* WSZPhotolistRequest.m */; };
+		587A6889231BD30700714971 /* WSZPhotoListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 587A6888231BD30700714971 /* WSZPhotoListResponse.m */; };
 		58E84658231B6E99002EB680 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E84657231B6E99002EB680 /* AppDelegate.m */; };
 		58E8465B231B6E99002EB680 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E8465A231B6E99002EB680 /* ViewController.m */; };
 		58E8465E231B6E99002EB680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E8465C231B6E99002EB680 /* Main.storyboard */; };
@@ -15,6 +18,22 @@
 		58E84666231B6E9D002EB680 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E84665231B6E9D002EB680 /* main.m */; };
 		58E84670231B6E9D002EB680 /* SWXWTestProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E8466F231B6E9D002EB680 /* SWXWTestProjectTests.m */; };
 		58E8467B231B6E9D002EB680 /* SWXWTestProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E8467A231B6E9D002EB680 /* SWXWTestProjectUITests.m */; };
+		58E8468B231B7178002EB680 /* WSZNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E8468A231B7178002EB680 /* WSZNetworkManager.m */; };
+		58E8468E231B71FA002EB680 /* WSZNetworkResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E8468D231B71FA002EB680 /* WSZNetworkResponseObject.m */; };
+		58E84691231B771E002EB680 /* LNPhotoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E84690231B771E002EB680 /* LNPhotoListViewController.m */; };
+		58E84694231B7781002EB680 /* WSZPhtoListObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E84693231B7781002EB680 /* WSZPhtoListObject.m */; };
+		58E84697231B7AFF002EB680 /* WSZPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E84696231B7AFF002EB680 /* WSZPhotoCell.m */; };
+		58E8469A231B7DB3002EB680 /* WSZPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E84699231B7DB3002EB680 /* WSZPhotoModel.m */; };
+		58E8469D231B9C9B002EB680 /* WSZProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E8469C231B9C9B002EB680 /* WSZProxy.m */; };
+		58E846A3231BC054002EB680 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E8469F231BC054002EB680 /* YYWeakProxy.m */; };
+		58E846A4231BC054002EB680 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E846A1231BC054002EB680 /* YYFPSLabel.m */; };
+		58E846AA231BC6C5002EB680 /* WSZBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E846A9231BC6C5002EB680 /* WSZBaseRequest.m */; };
+		58E846AF231BC87B002EB680 /* WSZBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E846AE231BC87B002EB680 /* WSZBaseResponse.m */; };
+		58E846B2231BC97A002EB680 /* WSZBaseResponseError.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E846B1231BC97A002EB680 /* WSZBaseResponseError.m */; };
+		58E846B9231BCADB002EB680 /* WSZBaseCommonInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E846B8231BCADB002EB680 /* WSZBaseCommonInfo.m */; };
+		58E846BC231BCD36002EB680 /* WSZNetBaseRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E846BB231BCD36002EB680 /* WSZNetBaseRequestManager.m */; };
+		B2924F7335AE6C3826B289B6 /* Pods_SWXWTestProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A3E5A7BA637A3FBB45A6AB /* Pods_SWXWTestProjectTests.framework */; };
+		B9EC928D04C761442DFC06DD /* Pods_SWXWTestProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F777A69378D3300822BA00 /* Pods_SWXWTestProjectUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +54,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4194796C9306A7BA33270639 /* Pods-SWXWTestProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWXWTestProjectTests.release.xcconfig"; path = "Target Support Files/Pods-SWXWTestProjectTests/Pods-SWXWTestProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		513DB68894CF36C956DED86A /* Pods-SWXWTestProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWXWTestProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-SWXWTestProjectTests/Pods-SWXWTestProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		587A6884231BD02D00714971 /* WSZPhotolistRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSZPhotolistRequest.h; sourceTree = "<group>"; };
+		587A6885231BD02D00714971 /* WSZPhotolistRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSZPhotolistRequest.m; sourceTree = "<group>"; };
+		587A6887231BD30700714971 /* WSZPhotoListResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSZPhotoListResponse.h; sourceTree = "<group>"; };
+		587A6888231BD30700714971 /* WSZPhotoListResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSZPhotoListResponse.m; sourceTree = "<group>"; };
 		58E84653231B6E99002EB680 /* SWXWTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWXWTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E84656231B6E99002EB680 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58E84657231B6E99002EB680 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +76,44 @@
 		58E84676231B6E9D002EB680 /* SWXWTestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWXWTestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E8467A231B6E9D002EB680 /* SWXWTestProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWXWTestProjectUITests.m; sourceTree = "<group>"; };
 		58E8467C231B6E9D002EB680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58E84689231B7178002EB680 /* WSZNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSZNetworkManager.h; sourceTree = "<group>"; };
+		58E8468A231B7178002EB680 /* WSZNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSZNetworkManager.m; sourceTree = "<group>"; };
+		58E8468C231B71FA002EB680 /* WSZNetworkResponseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSZNetworkResponseObject.h; sourceTree = "<group>"; };
+		58E8468D231B71FA002EB680 /* WSZNetworkResponseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSZNetworkResponseObject.m; sourceTree = "<group>"; };
+		58E8468F231B771E002EB680 /* LNPhotoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNPhotoListViewController.h; sourceTree = "<group>"; };
+		58E84690231B771E002EB680 /* LNPhotoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNPhotoListViewController.m; sourceTree = "<group>"; };
+		58E84692231B7781002EB680 /* WSZPhtoListObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSZPhtoListObject.h; sourceTree = "<group>"; };
+		58E84693231B7781002EB680 /* WSZPhtoListObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSZPhtoListObject.m; sourceTree = "<group>"; };
+		58E84695231B7AFF002EB680 /* WSZPhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSZPhotoCell.h; sourceTree = "<group>"; };
+		58E84696231B7AFF002EB680 /* WSZPhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSZPhotoCell.m; sourceTree = "<group>"; };
+		58E84698231B7DB3002EB680 /* WSZPhotoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSZPhotoModel.h; sourceTree = "<group>"; };
+		58E84699231B7DB3002EB680 /* WSZPhotoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSZPhotoModel.m; sourceTree = "<group>"; };
+		58E8469B231B9C9B002EB680 /* WSZProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSZProxy.h; sourceTree = "<group>"; };
+		58E8469C231B9C9B002EB680 /* WSZProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSZProxy.m; sourceTree = "<group>"; };
+		58E8469F231BC054002EB680 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
+		58E846A0231BC054002EB680 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		58E846A1231BC054002EB680 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		58E846A2231BC054002EB680 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		58E846A8231BC6C5002EB680 /* WSZBaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSZBaseRequest.h; sourceTree = "<group>"; };
+		58E846A9231BC6C5002EB680 /* WSZBaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSZBaseRequest.m; sourceTree = "<group>"; };
+		58E846AB231BC6F3002EB680 /* WSZBaseRequestConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSZBaseRequestConfigProtocol.h; sourceTree = "<group>"; };
+		58E846AC231BC713002EB680 /* WSZBaseRequestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSZBaseRequestProtocol.h; sourceTree = "<group>"; };
+		58E846AD231BC87B002EB680 /* WSZBaseResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSZBaseResponse.h; sourceTree = "<group>"; };
+		58E846AE231BC87B002EB680 /* WSZBaseResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSZBaseResponse.m; sourceTree = "<group>"; };
+		58E846B0231BC97A002EB680 /* WSZBaseResponseError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSZBaseResponseError.h; sourceTree = "<group>"; };
+		58E846B1231BC97A002EB680 /* WSZBaseResponseError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSZBaseResponseError.m; sourceTree = "<group>"; };
+		58E846B6231BCA09002EB680 /* WSZNetworkUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSZNetworkUtility.h; sourceTree = "<group>"; };
+		58E846B7231BCADB002EB680 /* WSZBaseCommonInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSZBaseCommonInfo.h; sourceTree = "<group>"; };
+		58E846B8231BCADB002EB680 /* WSZBaseCommonInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSZBaseCommonInfo.m; sourceTree = "<group>"; };
+		58E846BA231BCD36002EB680 /* WSZNetBaseRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSZNetBaseRequestManager.h; sourceTree = "<group>"; };
+		58E846BB231BCD36002EB680 /* WSZNetBaseRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSZNetBaseRequestManager.m; sourceTree = "<group>"; };
+		76094A5F10BA36118DCCAC75 /* Pods-SWXWTestProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWXWTestProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-SWXWTestProjectUITests/Pods-SWXWTestProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7958F48787EE90AE27A7C114 /* Pods-SWXWTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWXWTestProject.debug.xcconfig"; path = "Target Support Files/Pods-SWXWTestProject/Pods-SWXWTestProject.debug.xcconfig"; sourceTree = "<group>"; };
+		79E3FDEDE93EA7CB71949872 /* Pods-SWXWTestProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWXWTestProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-SWXWTestProjectUITests/Pods-SWXWTestProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D134765DF90C35E287E5A09 /* Pods-SWXWTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWXWTestProject.release.xcconfig"; path = "Target Support Files/Pods-SWXWTestProject/Pods-SWXWTestProject.release.xcconfig"; sourceTree = "<group>"; };
+		93AAEB7E94942532CDFDD37E /* Pods_SWXWTestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWXWTestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0F777A69378D3300822BA00 /* Pods_SWXWTestProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWXWTestProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A3E5A7BA637A3FBB45A6AB /* Pods_SWXWTestProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWXWTestProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E8909FCF06AB63F820A2AF /* Pods_SWXWTestProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2924F7335AE6C3826B289B6 /* Pods_SWXWTestProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9EC928D04C761442DFC06DD /* Pods_SWXWTestProjectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +151,8 @@
 				58E8466E231B6E9D002EB680 /* SWXWTestProjectTests */,
 				58E84679231B6E9D002EB680 /* SWXWTestProjectUITests */,
 				58E84654231B6E99002EB680 /* Products */,
+				B16CFF4942C8A98824D26FFF /* Pods */,
+				79495F599B5C7CDFD1B98DA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +169,26 @@
 		58E84655231B6E99002EB680 /* SWXWTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				58E8469E231BC054002EB680 /* YYFPSLabel */,
+				58E84688231B710F002EB680 /* Network */,
 				58E84656231B6E99002EB680 /* AppDelegate.h */,
 				58E84657231B6E99002EB680 /* AppDelegate.m */,
 				58E84659231B6E99002EB680 /* ViewController.h */,
 				58E8465A231B6E99002EB680 /* ViewController.m */,
+				58E8468F231B771E002EB680 /* LNPhotoListViewController.h */,
+				58E84690231B771E002EB680 /* LNPhotoListViewController.m */,
+				58E84695231B7AFF002EB680 /* WSZPhotoCell.h */,
+				58E84696231B7AFF002EB680 /* WSZPhotoCell.m */,
+				58E8469B231B9C9B002EB680 /* WSZProxy.h */,
+				58E8469C231B9C9B002EB680 /* WSZProxy.m */,
+				58E84698231B7DB3002EB680 /* WSZPhotoModel.h */,
+				58E84699231B7DB3002EB680 /* WSZPhotoModel.m */,
+				58E84692231B7781002EB680 /* WSZPhtoListObject.h */,
+				58E84693231B7781002EB680 /* WSZPhtoListObject.m */,
+				587A6884231BD02D00714971 /* WSZPhotolistRequest.h */,
+				587A6885231BD02D00714971 /* WSZPhotolistRequest.m */,
+				587A6887231BD30700714971 /* WSZPhotoListResponse.h */,
+				587A6888231BD30700714971 /* WSZPhotoListResponse.m */,
 				58E8465C231B6E99002EB680 /* Main.storyboard */,
 				58E8465F231B6E9D002EB680 /* Assets.xcassets */,
 				58E84661231B6E9D002EB680 /* LaunchScreen.storyboard */,
@@ -132,6 +216,64 @@
 			path = SWXWTestProjectUITests;
 			sourceTree = "<group>";
 		};
+		58E84688231B710F002EB680 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				58E84689231B7178002EB680 /* WSZNetworkManager.h */,
+				58E8468A231B7178002EB680 /* WSZNetworkManager.m */,
+				58E8468C231B71FA002EB680 /* WSZNetworkResponseObject.h */,
+				58E8468D231B71FA002EB680 /* WSZNetworkResponseObject.m */,
+				58E846B6231BCA09002EB680 /* WSZNetworkUtility.h */,
+				58E846A8231BC6C5002EB680 /* WSZBaseRequest.h */,
+				58E846A9231BC6C5002EB680 /* WSZBaseRequest.m */,
+				58E846AD231BC87B002EB680 /* WSZBaseResponse.h */,
+				58E846AE231BC87B002EB680 /* WSZBaseResponse.m */,
+				58E846B7231BCADB002EB680 /* WSZBaseCommonInfo.h */,
+				58E846B8231BCADB002EB680 /* WSZBaseCommonInfo.m */,
+				58E846BA231BCD36002EB680 /* WSZNetBaseRequestManager.h */,
+				58E846BB231BCD36002EB680 /* WSZNetBaseRequestManager.m */,
+				58E846AB231BC6F3002EB680 /* WSZBaseRequestConfigProtocol.h */,
+				58E846AC231BC713002EB680 /* WSZBaseRequestProtocol.h */,
+				58E846B0231BC97A002EB680 /* WSZBaseResponseError.h */,
+				58E846B1231BC97A002EB680 /* WSZBaseResponseError.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		58E8469E231BC054002EB680 /* YYFPSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				58E8469F231BC054002EB680 /* YYWeakProxy.m */,
+				58E846A0231BC054002EB680 /* YYFPSLabel.h */,
+				58E846A1231BC054002EB680 /* YYFPSLabel.m */,
+				58E846A2231BC054002EB680 /* YYWeakProxy.h */,
+			);
+			path = YYFPSLabel;
+			sourceTree = "<group>";
+		};
+		79495F599B5C7CDFD1B98DA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93AAEB7E94942532CDFDD37E /* Pods_SWXWTestProject.framework */,
+				D4A3E5A7BA637A3FBB45A6AB /* Pods_SWXWTestProjectTests.framework */,
+				B0F777A69378D3300822BA00 /* Pods_SWXWTestProjectUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B16CFF4942C8A98824D26FFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7958F48787EE90AE27A7C114 /* Pods-SWXWTestProject.debug.xcconfig */,
+				8D134765DF90C35E287E5A09 /* Pods-SWXWTestProject.release.xcconfig */,
+				513DB68894CF36C956DED86A /* Pods-SWXWTestProjectTests.debug.xcconfig */,
+				4194796C9306A7BA33270639 /* Pods-SWXWTestProjectTests.release.xcconfig */,
+				79E3FDEDE93EA7CB71949872 /* Pods-SWXWTestProjectUITests.debug.xcconfig */,
+				76094A5F10BA36118DCCAC75 /* Pods-SWXWTestProjectUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +281,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58E8467F231B6E9D002EB680 /* Build configuration list for PBXNativeTarget "SWXWTestProject" */;
 			buildPhases = (
+				0A49741D80F3BFBB06508817 /* [CP] Check Pods Manifest.lock */,
 				58E8464F231B6E99002EB680 /* Sources */,
 				58E84650231B6E99002EB680 /* Frameworks */,
 				58E84651231B6E99002EB680 /* Resources */,
+				460E0F147B51E288B2EC7872 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,6 +300,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58E84682231B6E9D002EB680 /* Build configuration list for PBXNativeTarget "SWXWTestProjectTests" */;
 			buildPhases = (
+				680622A93E2E78F7183AB32A /* [CP] Check Pods Manifest.lock */,
 				58E84667231B6E9D002EB680 /* Sources */,
 				58E84668231B6E9D002EB680 /* Frameworks */,
 				58E84669231B6E9D002EB680 /* Resources */,
@@ -174,6 +319,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58E84685231B6E9D002EB680 /* Build configuration list for PBXNativeTarget "SWXWTestProjectUITests" */;
 			buildPhases = (
+				70FB5B428D3CD06D3DD6BF14 /* [CP] Check Pods Manifest.lock */,
 				58E84672231B6E9D002EB680 /* Sources */,
 				58E84673231B6E9D002EB680 /* Frameworks */,
 				58E84674231B6E9D002EB680 /* Resources */,
@@ -257,14 +403,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A49741D80F3BFBB06508817 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWXWTestProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		460E0F147B51E288B2EC7872 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SWXWTestProject/Pods-SWXWTestProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SWXWTestProject/Pods-SWXWTestProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SWXWTestProject/Pods-SWXWTestProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		680622A93E2E78F7183AB32A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWXWTestProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70FB5B428D3CD06D3DD6BF14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWXWTestProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58E8464F231B6E99002EB680 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E846BC231BCD36002EB680 /* WSZNetBaseRequestManager.m in Sources */,
 				58E8465B231B6E99002EB680 /* ViewController.m in Sources */,
+				58E84694231B7781002EB680 /* WSZPhtoListObject.m in Sources */,
+				58E846B9231BCADB002EB680 /* WSZBaseCommonInfo.m in Sources */,
+				58E846AF231BC87B002EB680 /* WSZBaseResponse.m in Sources */,
+				58E846A3231BC054002EB680 /* YYWeakProxy.m in Sources */,
+				58E84691231B771E002EB680 /* LNPhotoListViewController.m in Sources */,
+				58E8469A231B7DB3002EB680 /* WSZPhotoModel.m in Sources */,
+				58E846AA231BC6C5002EB680 /* WSZBaseRequest.m in Sources */,
+				58E8468E231B71FA002EB680 /* WSZNetworkResponseObject.m in Sources */,
+				58E846B2231BC97A002EB680 /* WSZBaseResponseError.m in Sources */,
+				58E846A4231BC054002EB680 /* YYFPSLabel.m in Sources */,
 				58E84666231B6E9D002EB680 /* main.m in Sources */,
 				58E84658231B6E99002EB680 /* AppDelegate.m in Sources */,
+				58E8469D231B9C9B002EB680 /* WSZProxy.m in Sources */,
+				58E8468B231B7178002EB680 /* WSZNetworkManager.m in Sources */,
+				587A6889231BD30700714971 /* WSZPhotoListResponse.m in Sources */,
+				58E84697231B7AFF002EB680 /* WSZPhotoCell.m in Sources */,
+				587A6886231BD02D00714971 /* WSZPhotolistRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +681,7 @@
 		};
 		58E84680231B6E9D002EB680 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7958F48787EE90AE27A7C114 /* Pods-SWXWTestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +698,7 @@
 		};
 		58E84681231B6E9D002EB680 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D134765DF90C35E287E5A09 /* Pods-SWXWTestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -465,6 +715,7 @@
 		};
 		58E84683231B6E9D002EB680 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 513DB68894CF36C956DED86A /* Pods-SWXWTestProjectTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -483,6 +734,7 @@
 		};
 		58E84684231B6E9D002EB680 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4194796C9306A7BA33270639 /* Pods-SWXWTestProjectTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -501,6 +753,7 @@
 		};
 		58E84686231B6E9D002EB680 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79E3FDEDE93EA7CB71949872 /* Pods-SWXWTestProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SWXWTestProjectUITests/Info.plist;
@@ -518,6 +771,7 @@
 		};
 		58E84687231B6E9D002EB680 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76094A5F10BA36118DCCAC75 /* Pods-SWXWTestProjectUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SWXWTestProjectUITests/Info.plist;

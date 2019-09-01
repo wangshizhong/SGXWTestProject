@@ -17,14 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
     
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+- (IBAction)clickAction:(id)sender {
+    
     LNPhotoListViewController *listVC = [[LNPhotoListViewController alloc]init];
     [self.navigationController pushViewController:listVC animated:YES];
     
 }
+
 
 @end
